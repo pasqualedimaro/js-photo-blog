@@ -78,3 +78,13 @@ main {
     color: #555;
     font-size: 0.9rem;
 }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    .photo-container {
+        grid-template-columns: 1fr;
+    }
+}
