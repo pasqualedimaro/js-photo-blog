@@ -1,5 +1,5 @@
 /* RESET BASE */
-body{
+body {
     margin: 0;
     padding: 0;
 }
@@ -9,19 +9,72 @@ body {
     background-color: #f4f4f4;
 }
 
-/*HEADER*/
+/* HEADER*/
 header {
-    background-image: url(../img/wall.png);
-    height: 200px;
+    background-image: url('../img/wall.png');
     background-size: cover;
     background-position: center;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 header h1 {
     font-family: 'Edu TAS Beginner', sans-serif;
     font-size: 3rem;
+    color: black;
+}
+
+/* MAIN */
+main {
+    background-image: url('../img/cork.png');
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* CARD TIPO POLAROID */
+.photo-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.photo-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transform: rotate(1deg);
+    transition: transform 0.3s;
+}
+
+
+.photo-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid #eee;
+    display: block; 
+}
+
+.photo-info {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.photo-title {
+    font-family: 'Edu TAS Beginner', sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.photo-date {
+    color: #555;
+    font-size: 0.9rem;
 }
