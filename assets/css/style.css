@@ -1,0 +1,10 @@
+/* RESET BASE */
+body{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Sometype Mono', monospace;
+    background-color: #f4f4f4;
+}

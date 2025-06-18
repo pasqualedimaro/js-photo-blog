@@ -12,5 +12,6 @@ fetch('https://lanciweb.github.io/demo/api/pictures/')
                 <p>${pic.date}</p>
             `;
             container.appendChild(card);
-        });
+        })
+        .catch(error => console.error('Errore nel fetch:', error));
     });
