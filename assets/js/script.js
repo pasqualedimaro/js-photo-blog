@@ -1,5 +1,5 @@
-// provo a fare la chiamata api
-
+// provo a fare la chiamata api convertendola in json
 fetch('https://lanciweb.github.io/demo/api/pictures/')
-    .then(response => console.log(response))
+    .then(response => response.json())
+    .then(data => console.log(data))
     .catch(error => console.error(error));
